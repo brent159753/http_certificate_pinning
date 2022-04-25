@@ -54,6 +54,7 @@ class CertificatePinningInterceptor extends Interceptor {
             requestOptions: options,
             error: CertificateNotVerifiedException(),
           ),
+          true,
         );
       }
     } on Exception catch (e) {
@@ -70,6 +71,7 @@ class CertificatePinningInterceptor extends Interceptor {
           requestOptions: options,
           error: error,
         ),
+        true,
       );
     }
   }
