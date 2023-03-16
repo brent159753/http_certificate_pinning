@@ -13,7 +13,7 @@ In your flutter or dart project add the dependency:
 ```yml
 dependencies:
   ...
-  http_certificate_pinning: 2.0.7
+  http_certificate_pinning: 2.0.4
 ```
 
 ## Get Certificate FingerPrint
@@ -34,7 +34,7 @@ The Result is like:
 ### Using Dio
 
 ```dart
-import 'package:http_certificate_pinning/http_certificate_pinning.dart';
+import 'package:http_certificate_pinning/certificate_pinning_interceptor.dart';
   
   // Add CertificatePinningInterceptor in dio Client
   Dio getClient(String baseUrl, List<String> allowedSHAFingerprints){

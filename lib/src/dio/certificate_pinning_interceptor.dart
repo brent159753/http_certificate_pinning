@@ -5,6 +5,8 @@ import 'package:dio/dio.dart';
 import 'package:flutter/services.dart';
 import 'package:http_certificate_pinning/http_certificate_pinning.dart';
 
+import '../exceptions/exceptions.dart';
+
 class CertificatePinningInterceptor extends Interceptor {
   final List<String> _allowedSHAFingerprints;
   final int _timeout;
